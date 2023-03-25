@@ -18,5 +18,6 @@ const location:number[]= await getLocation;
 const actualWeather:object = await getWeather(location);
 const forecast:object = await getForecast(location);
 
+
 drawCurrentWeather(app, actualWeather, loading);
 drawForecast(app, forecast);
